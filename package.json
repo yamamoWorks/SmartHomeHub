@@ -14,5 +14,6 @@
     "bluebird": "^3.5.1",
     "promise": "^8.0.1",
     "ps4-waker": "^1.4.3"
-  }
+  },
+  "devDependencies": {}
 }
