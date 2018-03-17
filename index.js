@@ -33,7 +33,7 @@ const onSendPS4Command = (request, response) => {
 
 client.openAsync()
 	.then(() => {
-		console.log("client opened.");
+		console.log("iot-hub client opened.");
 		client.onDeviceMethod("sendPS4Command", onSendPS4Command);
 	})
-	.catch(err => console.error(`could not open client. ${err.toString()}`));
+	.catch(err => console.error(`could not open iot-hub client. ${err.toString()}`));
