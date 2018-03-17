@@ -9,8 +9,6 @@ const Device = require("ps4-waker").Device;
 const connectionString = process.env.IOTHUB_CONNECTION_STRING;
 const client = Bluebird.promisifyAll(Client.fromConnectionString(connectionString, Mqtt));
 
-var aaaa= "a";
-console.log(aaaa);
 
 const onSendPS4Command = (request, response) => {
 	console.log(request.payload);
