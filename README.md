@@ -24,15 +24,14 @@ var methodParams =
 }
 ```
 #### COMMAND
-startTitle : Start PS4 application.  
-standby : Going to standby mode.
+__startTitle__ : Start PS4 application.  
+__standby__ : Going to standby mode.
 
 #### TITLE_ID
 Specify PS4 application ID.
 It is different among countries.
-
 |Application|Title Id|Region|
 |-|-|-|
 |Netflix|[CUSA02988](https://store.playstation.com/ja-jp/product/JA0010-CUSA02988_00-NETFLIXPOLLUX001)|JP|
 |Netflix|[CUSA00127](https://store.playstation.com/en-gb/product/EP4350-CUSA00127_00-NETFLIXPOLLUX001)|EU|
-|Netflix|[CUSA00129]((https://store.playstation.com/en-us/product/UT0007-CUSA00129_00-NETFLIXPOLLUX001))|US|
+|Netflix|[CUSA00129]((https://store.playstation.com/en-us/product/UT0007-CUSA00129_00-NETFLIXPOLLUX001)|US|
