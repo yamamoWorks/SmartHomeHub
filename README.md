@@ -30,6 +30,7 @@ standby : Going to standby mode.
 #### TITLE_ID
 Specify PS4 application ID.
 It is different among countries.
+
 |Application|Title Id|Region|
 |-|-|-|
 |Netflix|[CUSA02988](https://store.playstation.com/ja-jp/product/JA0010-CUSA02988_00-NETFLIXPOLLUX001)|JP|
