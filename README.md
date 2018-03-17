@@ -9,9 +9,9 @@ Connect Azure IoT Hub and wait direct method invoke.
 ## Usage
 Set environment variable IOTHUB_CONNECTION_STRING that is Azure IoT Hub connection string.
 ```
-node index.js [ipaddress]
+node index.js [ipAddress]
 ```
-[ipaddress] is optional. Bind to a specific network adapter IP, if you have multiple.
+\[ipAddress\] is optional. Bind to a specific network adapter IP, if you have multiple.
 
 And, invoke direct method via IoT Hub with following parameters.
 ```
