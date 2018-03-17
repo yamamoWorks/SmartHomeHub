@@ -13,7 +13,7 @@ node index.js [ipaddress]
 ```
 [ipaddress] is optional. Bind to a specific network adapter IP, if you have multiple.
 
-And invoke direct method via IoT Hub.  
+And, invoke direct method via IoT Hub with following parameters.
 ```
 var methodParams =
 {
