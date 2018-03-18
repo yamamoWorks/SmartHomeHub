@@ -37,3 +37,4 @@ It is different among region.
 |YouTube|[CUSA01015](https://store.playstation.com/en-us/product/UP4381-CUSA01015_00-YOUTUBESCEA00000)|[CUSA01065](https://store.playstation.com/ja-jp/product/JA0004-CUSA01065_00-YOUTUBESCEJ00000)|[CUSA01116](https://store.playstation.com/en-gb/product/EP4381-CUSA01116_00-YOUTUBESCEE00000)|
 |Amazon Video|[CUSA00130](https://store.playstation.com/en-us/product/UP2064-CUSA00130_00-AIV00000000000US)|[CUSA03099](https://store.playstation.com/ja-jp/product/JA0011-CUSA03099_00-AMAZONVIDEOJAPAN)|[CUSA00126](https://store.playstation.com/en-gb/product/EP4183-CUSA00126_00-AIV00000000000EU)|
 
+
