@@ -31,7 +31,7 @@ __standby__ : Going to standby mode.
 Specify PS4 application ID.
 It is different among region.
 
-|Application|Title Id US|Title Id JP|Title Id EU|
+|Application|Title Id (US)|Title Id (JP)|Title Id (EU)|
 |-|-|-|-|
 |Netflix|[CUSA00129](https://store.playstation.com/en-us/product/UT0007-CUSA00129_00-NETFLIXPOLLUX001)|[CUSA02988](https://store.playstation.com/ja-jp/product/JA0010-CUSA02988_00-NETFLIXPOLLUX001)|[CUSA00127](https://store.playstation.com/en-gb/product/EP4350-CUSA00127_00-NETFLIXPOLLUX001)|
 |YouTube|[CUSA01015](https://store.playstation.com/en-us/product/UP4381-CUSA01015_00-YOUTUBESCEA00000)|[CUSA01065](https://store.playstation.com/ja-jp/product/JA0004-CUSA01065_00-YOUTUBESCEJ00000)|[CUSA01116](https://store.playstation.com/en-gb/product/EP4381-CUSA01116_00-YOUTUBESCEE00000)|
