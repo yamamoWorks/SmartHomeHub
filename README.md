@@ -29,7 +29,7 @@ __standby__ : Going to standby mode.
 
 #### TITLE_ID
 Specify PS4 application ID.
-It is different among countries.
+It is different among region.
 
 |Application|Title Id|Region|
 |-|-|-|
