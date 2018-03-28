@@ -25,7 +25,7 @@ const onSendPS4Command = (request, response) => {
 		.then(() => ps4.close())
 		.then(() => res.sendAsync(200, "success"))
 		.catch(err => {
-			console.err(err.toString());
+			console.error(err.toString());
 			res.sendAsync(500, err.toString());
 		});
 };
