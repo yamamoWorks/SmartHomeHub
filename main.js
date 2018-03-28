@@ -21,7 +21,7 @@ const onSendPS4Command = (request, response) => {
 
 	Promise.resolve()
 		.then(() => command == "standby" ? ps4.turnOff() : ps4.turnOn())
-		.then(() => command == "startTitle" ? ps4.startTitle(titleId) : null)
+		.then(() => command == "start" ? ps4.startTitle(titleId) : null)
 		.then(() => ps4.close())
 		.then(() => res.sendAsync(200, "success"))
 		.catch(err => {
