@@ -4,6 +4,7 @@ const Bluebird = require("bluebird");
 const Mqtt = require("azure-iot-device-mqtt").Mqtt;
 const Client = require("azure-iot-device").Client;
 const Device = require("ps4-waker").Device;
+require('log-timestamp');
 
 const connectionString = process.env.IOTHUB_CONNECTION_STRING;
 const client = Bluebird.promisifyAll(Client.fromConnectionString(connectionString, Mqtt));
