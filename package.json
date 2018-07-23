@@ -9,8 +9,8 @@
   "author": "yamamo",
   "license": "ISC",
   "dependencies": {
-    "azure-iot-device": "^1.4.0",
-    "azure-iot-device-mqtt": "^1.4.0",
+    "azure-iot-device": "^1.7.1",
+    "azure-iot-device-mqtt": "^1.7.1",
     "bluebird": "^3.5.1",
     "log-timestamp": "^0.1.2",
     "promise": "^8.0.1",
