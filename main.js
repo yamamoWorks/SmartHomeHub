@@ -1,11 +1,13 @@
 "use strict";
 
+require('log-timestamp');
 const Bluebird = require("bluebird");
 const Mqtt = require("azure-iot-device-mqtt").Mqtt;
 const Client = require("azure-iot-device").Client;
 const Device = require("ps4-waker").Device;
-require('log-timestamp');
-const { exec } = require("child_process");
+const exec = require("child_process");
+const request = require('request');
+const Bravia = require('./bravia.js');
 
 const connectionString = process.env.IOTHUB_CONNECTION_STRING;
 const client = Bluebird.promisifyAll(Client.fromConnectionString(connectionString, Mqtt));
@@ -46,10 +48,48 @@ const onSendCecCommand = (request, response) => {
 	});
 };
 
+const onSendBraviaCommand = (request, response) => {
+	console.log(request.payload);
+	let commands = request.payload.commands;
+
+	let client = new Bravia("192.168.11.9");
+
+	commands.forEach(command => {
+		client.sendIrccCommand(command);
+	});
+};
+
+const onSendChannelCommand = (request, response) => {
+	console.log(request.payload);
+	let name = request.payload.name.replace(/\s+/g, "");
+	let commands = channels[name];
+	console.log(commands);
+
+	if (commands) {
+		let client = new Bravia("192.168.11.9");
+		commands.forEach(cmd => {
+			client.sendIrccCommand(cmd);
+		});
+	}
+};
+
+const channels = {
+	"NHK": ["Digital", "Num1"],
+	"Eテレ": ["Digital", "Num2"],
+	"日テレ": ["Digital", "Num4"],
+	"テレ朝": ["Digital", "Num5"],
+	"TBS": ["Digital", "Num6"],
+	"テレ東": ["Digital", "Num7"],
+	"フジテレビ": ["Digital", "Num8"]
+};
+
+
 client.openAsync()
 	.then(() => {
 		console.log("iot-hub client opened.");
 		client.onDeviceMethod("sendPS4Command", onSendPS4Command);
 		client.onDeviceMethod("sendCecCommand", onSendCecCommand);
+		client.onDeviceMethod("sendBraviaCommand", onSendBraviaCommand);
+		client.onDeviceMethod("sendChannelCommand", onSendChannelCommand);
 	})
 	.catch(err => console.error(`could not open iot-hub client. ${err.toString()}`));
