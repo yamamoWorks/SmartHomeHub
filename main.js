@@ -5,7 +5,7 @@ const Bluebird = require("bluebird");
 const Mqtt = require("azure-iot-device-mqtt").Mqtt;
 const Client = require("azure-iot-device").Client;
 const Device = require("ps4-waker").Device;
-const exec = require("child_process");
+const { exec } = require("child_process");
 const request = require('request');
 const Bravia = require('./bravia.js');
 
