@@ -25,7 +25,11 @@ Bravia.prototype.sendIrccCommand = function (command) {
     };
 
     request(options, function (error, response, body) {
-        console.log(`${response.statusCode} ${response.statusMessage}`);
+        if (error) {
+            console.log(error);
+        } else {
+            console.log(`${response.statusCode} ${response.statusMessage} ${body}`);
+        }
     });
 }
 

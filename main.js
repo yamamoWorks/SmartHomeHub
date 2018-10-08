@@ -10,6 +10,7 @@ const request = require('request');
 const Bravia = require('./bravia.js');
 
 const connectionString = process.env.IOTHUB_CONNECTION_STRING;
+const braviaIpAddress = process.env.BRAVIA_IP_ADDRESS;
 const client = Bluebird.promisifyAll(Client.fromConnectionString(connectionString, Mqtt));
 
 
@@ -52,7 +53,7 @@ const onSendBraviaCommand = (request, response) => {
 	console.log(request.payload);
 	let commands = request.payload.commands;
 
-	let client = new Bravia("192.168.11.9");
+	let client = new Bravia(braviaIpAddress);
 
 	commands.forEach(command => {
 		client.sendIrccCommand(command);
@@ -66,7 +67,7 @@ const onSendChannelCommand = (request, response) => {
 	console.log(commands);
 
 	if (commands) {
-		let client = new Bravia("192.168.11.9");
+		let client = new Bravia(braviaIpAddress);
 		commands.forEach(cmd => {
 			client.sendIrccCommand(cmd);
 		});
