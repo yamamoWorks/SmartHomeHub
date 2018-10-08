@@ -5,10 +5,7 @@ const Bravia = function (ipAddrss) {
 }
 
 Bravia.prototype.sendIrccCommand = function (command) {
-
     let code = irccCommands[command];
-    console.log(code);
-
     let xml = `
         <s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/" s:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/">
             <s:Body>
@@ -27,8 +24,6 @@ Bravia.prototype.sendIrccCommand = function (command) {
     request(options, function (error, response, body) {
         if (error) {
             console.log(error);
-        } else {
-            console.log(`${response.statusCode} ${response.statusMessage} ${body}`);
         }
     });
 }
@@ -53,6 +48,7 @@ const irccCommands = {
     "Num7": "AAAAAQAAAAEAAAAGAw==",
     "Num8": "AAAAAQAAAAEAAAAHAw==",
     "Num9": "AAAAAQAAAAEAAAAIAw==",
+    "Num0": "AAAAAQAAAAEAAAAJAw==",
     "Num10": "AAAAAQAAAAEAAAAJAw==",
     "Num11": "AAAAAQAAAAEAAAAKAw==",
     "Num12": "AAAAAQAAAAEAAAALAw==",
