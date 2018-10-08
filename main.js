@@ -80,7 +80,18 @@ const channels = {
 	"テレ朝": ["Digital", "Num5"],
 	"TBS": ["Digital", "Num6"],
 	"テレ東": ["Digital", "Num7"],
-	"フジテレビ": ["Digital", "Num8"]
+	"フジテレビ": ["Digital", "Num8"],
+
+	"NHKBS1": ["BS", "TenKey", "Num1", "Num0", "Num1"],
+	"NHKBSプレミアム": ["BS", "TenKey", "Num1", "Num0", "Num3"],
+	"BS日テレ": ["BS", "TenKey", "Num1", "Num4", "Num1"],
+	"BS朝日": ["BS", "TenKey", "Num1", "Num5", "Num1"],
+	"BSTBS": ["BS", "TenKey", "Num1", "Num6", "Num1"],
+	"BSテレ東": ["BS", "TenKey", "Num1", "Num7", "Num1"],
+	"BSフジ": ["BS", "TenKey", "Num1", "Num8", "Num1"],
+	"WOWOWプライム": ["BS", "TenKey", "Num1", "Num9", "Num1"],
+	"WOWOWライブ": ["BS", "TenKey", "Num1", "Num9", "Num2"],
+	"WOWOWシネマ": ["BS", "TenKey", "Num1", "Num9", "Num3"]
 };
 
 
