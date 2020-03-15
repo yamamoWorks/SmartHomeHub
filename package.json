@@ -9,13 +9,13 @@
   "author": "yamamo",
   "license": "ISC",
   "dependencies": {
-    "azure-iot-device": "^1.12.0",
-    "azure-iot-device-mqtt": "^1.11.0",
-    "bluebird": "^3.7.0",
+    "azure-iot-device": "^1.13.0",
+    "azure-iot-device-mqtt": "^1.12.0",
+    "bluebird": "^3.7.2",
     "log-timestamp": "^0.1.2",
-    "promise": "^8.0.3",
-    "ps4-waker": "^1.8.6",
-    "request": "^2.88.0"
+    "promise": "^8.1.0",
+    "ps4-waker": "^1.9.0",
+    "request": "^2.88.2"
   },
   "devDependencies": {}
 }
