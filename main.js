@@ -18,6 +18,12 @@ const onSendPS4Command = (request, response) => {
 	console.log(request.payload);
 	let command = request.payload.command;
 	let titleId = request.payload.titleId;
+	let dateTime = Date.parse(request.payload.dateTime.replace('at ', '').replace('AM', ' AM').replace('PM', ' PM').replace(',', ''));
+	let now = new Date();
+
+	if(dateTime < now.setMinutes(now.getMinutes()-10)) {
+		return;
+	}
 
 	var res = Bluebird.promisifyAll(response);
 	let ps4 = new Device({
